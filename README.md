@@ -12,15 +12,9 @@ cp .env.example .env.local   # paste your Bright Data token into BRIGHTDATA_API_
 npm run dev                  # open http://localhost:3000
 ```
 
-You need a Bright Data token with **Pro mode** on ([pricing](https://brightdata.com/pricing/mcp-server)); the `web_data_linkedin_*` tools aren't free. A company page returns in a few seconds.
-
-Prefer the command line? Capture one page with:
-
-```bash
-node --env-file=.env.local scripts/run-linkedin.mjs web_data_linkedin_company_profile "https://www.linkedin.com/company/stripe"
-```
+You need a Bright Data token with **Pro mode** on ([pricing](https://brightdata.com/pricing/mcp-server)). A company page returns in a few seconds.
 
 ## Good to know
 
-- Your token stays local. `.env*` is gitignored, so it's never committed.
-- The demo tracks public company pages on purpose. If you fetch individual profiles, follow LinkedIn's terms and applicable privacy rules.
+- `.env*` is gitignored, so your token is never committed.
+- The demo tracks public company pages. If you fetch individual profiles, follow LinkedIn's terms and privacy rules.
