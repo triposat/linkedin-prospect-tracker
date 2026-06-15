@@ -2,7 +2,7 @@
 
 Watches LinkedIn company pages for changes (followers, headcount, size band, and other fields) and shows them on a dashboard. This is the runnable version of **Use case 3** from the [brightdata-scrape Kiro Power](https://github.com/brightdata/kiro-powers) guide.
 
-It fetches public company pages through Bright Data's [Web MCP server](https://brightdata.com/ai/mcp-server). The same code can fetch individual profiles too; you just point it at your own list.
+It fetches public company pages through Bright Data's [Web MCP server](https://brightdata.com/ai/mcp-server). The same code can fetch individual profiles too; point it at your own list.
 
 ## Run it
 
