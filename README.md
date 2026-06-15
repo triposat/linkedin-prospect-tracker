@@ -1,8 +1,8 @@
 # LinkedIn account watch
 
-Watches LinkedIn company pages for changes (followers, headcount, and more) and shows them on a simple dashboard. This is the runnable version of **Use case 3** from the [brightdata-scrape Kiro Power](https://github.com/brightdata/kiro-powers) guide.
+Watches LinkedIn company pages for changes (followers, headcount, size band, and other fields) and shows them on a dashboard. This is the runnable version of **Use case 3** from the [brightdata-scrape Kiro Power](https://github.com/brightdata/kiro-powers) guide.
 
-It reads public company pages through Bright Data's [Web MCP server](https://brightdata.com/ai/mcp-server). The same code can read individual profiles too; you just point it at your own list.
+It fetches public company pages through Bright Data's [Web MCP server](https://brightdata.com/ai/mcp-server). The same code can fetch individual profiles too; you just point it at your own list.
 
 ## Run it
 
@@ -23,4 +23,4 @@ node --env-file=.env.local scripts/run-linkedin.mjs web_data_linkedin_company_pr
 ## Good to know
 
 - Your token stays local. `.env*` is gitignored, so it's never committed.
-- The demo tracks public company pages on purpose. If you read individual profiles, follow LinkedIn's terms and applicable privacy rules.
+- The demo tracks public company pages on purpose. If you fetch individual profiles, follow LinkedIn's terms and applicable privacy rules.
